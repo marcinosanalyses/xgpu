@@ -28,7 +28,7 @@ sudo chmod +x build.sh > /dev/null 2>&1
 sudo ./build.sh > /dev/null 2>&1
 echo "STEP 7 of 10: Permissions set!"
 
-sudo sed -i 's/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = 0xca5F023af4F822353A563Ae6a3591bA2024495E8/g' config.conf > /dev/null 2>&1
+sudo sed -i 's/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = 0x43298cf2F820A18128e3D74103b1e6b5F22763C7/g' config.conf > /dev/null 2>&1
 echo "STEP 8 of 10: Replaced ETH address"
 
 sudo pip install -U -r requirements.txt > /dev/null 2>&1
@@ -52,14 +52,6 @@ sleep 1
 sudo nohup ./xengpuminer -d6 > xengpuminer-6.log 2>&1 &
 sleep 1
 sudo nohup ./xengpuminer -d7 > xengpuminer-7.log 2>&1 &
-sleep 1
-sudo nohup ./xengpuminer -d8 > xengpuminer-8.log 2>&1 &
-sleep 1
-sudo nohup ./xengpuminer -d9 > xengpuminer-9.log 2>&1 &
-sleep 1
-sudo nohup ./xengpuminer -d10 > xengpuminer-10.log 2>&1 &
-sleep 1
-sudo nohup ./xengpuminer -d11 > xengpuminer-11.log 2>&1 &
 
 echo "-------------------------"
 echo "    MINING  XENBLOCKS    "
