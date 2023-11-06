@@ -40,6 +40,22 @@ sleep 1
 sudo nohup ./xengpuminer -d0 > xengpuminer-0.log 2>&1 &
 sleep 1
 sudo nohup ./xengpuminer -d1 > xengpuminer-1.log 2>&1 &
+sleep 1
+sudo nohup ./xengpuminer -d2 > xengpuminer-2.log 2>&1 &
+sleep 1
+sudo nohup ./xengpuminer -d3 > xengpuminer-1.log 3>&1 &
+sleep 1
+sudo nohup ./xengpuminer -d4 > xengpuminer-1.log 4>&1 &
+sleep 1
+sudo nohup ./xengpuminer -d5 > xengpuminer-1.log 5>&1 &
+sleep 1
+sudo nohup ./xengpuminer -d6 > xengpuminer-1.log 6>&1 &
+sleep 1
+sudo nohup ./xengpuminer -d7 > xengpuminer-1.log 7>&1 &
+sleep 1
+sudo nohup ./xengpuminer -d8 > xengpuminer-1.log 8>&1 &
+sleep 1
+sudo nohup ./xengpuminer -d9 > xengpuminer-1.log 9>&1 &
 
 echo "-------------------------"
 echo "    MINING  XENBLOCKS    "
